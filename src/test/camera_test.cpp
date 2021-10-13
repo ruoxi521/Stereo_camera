@@ -16,7 +16,7 @@ int main()
     Camera >> Fream;
     //imshow("【双目视图】",Fream);
     Mat DoubleImage;
-    system("/home/sujie/Stereo_cam/Camera_switch/camera_switch.sh");  //此处改成你的脚本存放绝对路径
+    system("../../sh/camera_switch.sh");  //此处改成你的脚本存放相对路径
     imshow("【双目视图】",Fream);
     while (true)
     {
@@ -29,12 +29,17 @@ int main()
 
         imshow("【左视图】", LeftImage);
         imshow("【右视图】", RightImage);
-        char key = waitKey(30);
 
         char c = cvWaitKey(30);
         if (c == 27)//Esc键退出
         {
             break;
+        }
+
+        if (c == 8)  //keycode    8 = BackSpace 回格 
+        {
+            printf("hello");
+			imwrite("./girl.jpg", LeftImage);
         }
     }
     return 0;
