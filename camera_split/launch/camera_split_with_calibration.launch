@@ -1,0 +1,16 @@
+<launch>
+	<node pkg="camera_split" type="camera_split_node" name="camera_split_node" output="screen" >
+		<param name="left_cam_file" type="string" value="file://$(find camera_split)/lifecam.yaml" />
+		<param name="right_cam_file" type="string" value="file://$(find camera_split)/lifecam.yaml" />
+	</node>
+	<node pkg="image_proc" type="image_proc" name="image_proc_left" ns="left_cam" />
+	<node pkg="image_proc" type="image_proc" name="image_proc_right" ns="right_cam" />
+	<node pkg="image_view" type="image_view" name="image_view_left" respawn="false" output="screen">
+		<remap from="image" to="/left_cam/image_rect_color"/>
+		<param name="autosize" value="true" />
+	</node>
+	<node pkg="image_view" type="image_view" name="image_view_right" respawn="false" output="screen">
+		<remap from="image" to="/right_cam/image_rect_color"/>
+		<param name="autosize" value="true" />
+	</node>
+</launch>
