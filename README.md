@@ -34,4 +34,5 @@ lsusb  #查询出当前已连接的设备名及端口号
 如果不习惯使用shell
 
 可以使用我制作的这款支持Linux环境的上位机
+
 下载链接 [https://github.com/ruoxi521/Stereo_QT/releases](https://github.com/ruoxi521/Stereo_QT/releases)
