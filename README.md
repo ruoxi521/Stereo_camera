@@ -8,7 +8,7 @@
 
 下图就是它的真实面目，以及我为它量身定做的外壳。
 
-[](https://cn-sy1.rains3.com/dfdfgf/blog/How_did_the_3D-WebCam_of_the_QT_host_computer_go_from_an_idea_to_an_application_product/1.png)
+![](https://cn-sy1.rains3.com/dfdfgf/blog/How_did_the_3D-WebCam_of_the_QT_host_computer_go_from_an_idea_to_an_application_product/1.png)
 
 ## windows
 
