@@ -8,7 +8,7 @@
 
 下图就是它的真实面目，以及我为它量身定做的外壳。
 
-![QQ图片20211010133829](https://raw.githubusercontent.com/sujit-168/Blog-Picture/master/Typora/202110101405267.jpg)
+![](https://cn-sy1.rains3.com/dfdfgf/blog/How_did_the_3D-WebCam_of_the_QT_host_computer_go_from_an_idea_to_an_application_product/1.png)
 
 ## windows
 
@@ -18,7 +18,7 @@
 
 ## Linux
 
-在Linux下需要配合卖家提供的sh脚本来使用，通过uvc命令来调整相机的模式，为了方便使用，我对提供的脚本进行优化，使其使用起来更加友好。
+在Linux下需要配合卖家提供的sh脚本来使用，通过uvc命令来调整相机的模式，为了方便使用，我对提供的脚本进行了优化，使其使用起来更加友好。
 
 - 首先需要查询设备名称及端口号
 
@@ -31,3 +31,8 @@ lsusb  #查询出当前已连接的设备名及端口号
 ```
 ./camera.sh  #运行camera.sh脚本
 ```
+如果不习惯使用shell
+
+可以使用我制作的这款支持Linux环境的上位机
+
+下载链接 [https://github.com/ruoxi521/Stereo_QT/releases](https://github.com/ruoxi521/Stereo_QT/releases)
